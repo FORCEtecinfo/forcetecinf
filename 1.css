@@ -1,0 +1,317 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	
+}
+
+BODY{
+ 
+    background-COLOR:white;
+}
+
+nav{
+	position: relative;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: Arial Black, Helvetica, sans-serif;
+	padding: 0 5%;
+	height: 85px;
+	background-color: black;
+}
+
+nav .logo{
+	font-family: 'Bauhaus 93', sans-serif;
+	float: left;
+	width: 20%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 35px;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+nav .list{
+	float: right;
+	padding: 0;
+	margin: 0;
+	width: 60%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav .list li{
+	list-style: none;
+}
+
+nav .list a{
+	display: block;
+	text-transform: uppercase;
+	padding: 10PX;
+	font-size: 14px;
+	font-weight: bold;
+	color: #F5A504 ;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+nav .list a:hover{
+	border-bottom: 4px solid #F5A504;
+}
+
+#toggle{
+    position: absolute;
+    top: -100px;
+
+}
+
+nav .icon-bars{
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav .icon-bars .line{
+    width: 30px;
+    height: 5px;
+    background-color: #F5A504;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+    font-family: Arial Black;
+}
+
+VIDEO{
+	width: 1000px;
+    height: 500px;
+	padding: 0;
+	margin: 0;
+}
+
+
+H2{
+	list-style: none;
+    margin-left: 14px;
+    margin-top: 0px;
+    font-size: 20px;
+    color: black;
+    font-family: Arial Black;
+}
+
+
+H3{
+	list-style: none;
+    margin-left: 14px;
+    margin-top: 0px;
+    font-size: 15px;
+    color: black;
+    font-family: Arial Black;
+}
+
+IMG{
+	width:1300PX;
+	height:400PX;
+}
+
+
+
+
+
+.container{
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.footer{
+	padding: 30px ;
+	background-color:BLACK;
+}
+.footer-link{
+	display: flex;
+}
+.link{
+	width: 400px;
+}
+.link h3{
+	font-size: 18px;
+	color: WHITE;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.link a{
+	font-size: 18px;
+	color: #F5A504;
+	display: block;
+	margin-bottom: 20px;
+	text-align: center;
+	font-family: Arial Black;
+}
+.link a:hover{
+	color: WHITE;
+}
+
+p{
+	font-size: 15px;
+	color: #F5A504;
+	margin-bottom: 20px;
+	text-align: center;
+	font-family: Arial Black;
+}
+
+.socials{
+	display: flex;
+	margin-bottom: 15px;
+	justify-content: center;
+}
+
+.socials a{
+	display: inline-block;
+	min-height: 40px;
+	width: 40px;
+	background-color: #F5A504;
+	margin: 0 15px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: WHITE;
+	font-size: 20px;
+   justify-content: center;
+}
+.socials a:hover{
+	background-color: BLACK;
+}
+
+hr{
+	border: 1px solid WHITE;
+	margin: 35px 0;
+}
+
+.footer-text{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+.footer-text H3{
+	font-size: 15px;
+	color: white;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+@media (max-width:900px){
+
+    nav .logo{ 
+	font-family: 'Bauhaus 93', sans-serif;
+	float: left;
+	width: 40%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-size:30px;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;  
+    }
+
+    nav .list{
+         float: none;
+         position: fixed;
+         z-index: 9;
+         left: 0;
+         right: 0;
+         top: 100px;
+         bottom: 100%;
+         width: auto;
+         height: auto;
+         flex-direction: column;
+         justify-content: space-evenly;
+         background-color: rgba(0, 0, 0, 0.8);
+         overflow: hidden;
+         transition: all.5s ease-in-out;
+    }
+
+    nav .list a{
+        font-size: 20px;
+    }
+
+    nav :checked ~ .list{
+        bottom: 0;
+    }
+
+    nav .icon-bars{
+        display: block;
+    }
+
+    video{
+    	width: 680px;
+    	height: 400px;
+    	justify-content: center;
+    }
+
+    H2{
+    list-style: none;
+    margin-left: 14px;
+    margin-top: 0px;
+    font-size: 20px;
+    color: black;
+    font-family: Arial Black;
+    }
+
+
+    H3{
+    list-style: none;
+    margin-left: 14px;
+    margin-top: 0px;
+    font-size: 20px;
+    color: black;
+    font-family: Arial Black;
+    }
+
+    IMG{
+	width:680PX;
+	height:250PX;
+    }
+
+}
+
+
+
+
+
+@media(max-width:991px){ 
+
+    .footer{
+    	padding: 50px;
+    }
+    .footer-link{
+    	flex-direction: column;
+    	align-items: center;
+    	text-align: center;
+    }
+    .socials{
+    	justify-content: center;
+    }
+    .footer-text{
+    	text-align: center;
+    }
+}
+
+
+
